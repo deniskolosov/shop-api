@@ -1,7 +1,7 @@
 # shop-api
 Simple internet shop with REST API implementation using Django Rest Framework
 
-To create migrations, superuser and rundevserver:
+To create migrations, superuser and run dev server:
 
 ```bash
 $ ./init_db_and_run.sh
