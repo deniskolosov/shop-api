@@ -50,6 +50,7 @@ methods available:
     Content-Type: application/json
     Vary: Accept
 
+    ```json
     {
         "id": 1,
         "items": 1,
@@ -60,19 +61,22 @@ methods available:
         "approved": false,
         "item": 1
     }
+    ```
  
 * **Error Response:**
 
   * HTTP 400 Bad Request
-    Allow: POST, OPTIONS
-    Content-Type: application/json
+    Allow: POST, OPTIONS<br>
+    Content-Type: application/json<br>
     Vary: Accept
 
+    ```json
     {
         "author_email": [
             "This field may not be blank."
         ]
     }
+    ```
 
 **Show Item**
 ----
@@ -99,11 +103,12 @@ methods available:
 
 * **Success Response:**
 
-    * HTTP 200 OK
-      Allow: GET, HEAD, OPTIONS
-      Content-Type: application/json
+    * HTTP 200 OK<br>
+      Allow: GET, HEAD, OPTIONS<br>
+      Content-Type: application/json<br>
       Vary: Accept
 
+     ```json
       {
           "id": 1,
           "reviews": [
@@ -135,14 +140,17 @@ methods available:
           "attributes": "{\"attrr\":\"blue\"}",
           "images": "http://cdn.images.express.co.uk/img/dynamic/1/590x/tv-629703.jpg"
       }
+      ```
  
 * **Error Response:**
 
-    * HTTP 404 Not Found
-      Allow: GET, HEAD, OPTIONS
-      Content-Type: application/json
+    * HTTP 404 Not Found<br>
+      Allow: GET, HEAD, OPTIONS<br>
+      Content-Type: application/json<br>
       Vary: Accept
  
+ ```json
       {
           "detail": "Not found."
       }
+  ```
